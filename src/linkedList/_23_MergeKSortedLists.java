@@ -2,7 +2,7 @@ package linkedList;
 
 public class _23_MergeKSortedLists {
 
-	private static class Node<T extends Comparable<T>> {
+	private static class Node<T extends Comparable> {
 		T key;
 		Node<T> next;
 
