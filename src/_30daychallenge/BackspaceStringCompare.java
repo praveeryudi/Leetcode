@@ -1,4 +1,4 @@
-package solutions;
+package _30daychallenge;
 
 import java.util.Stack;
 
