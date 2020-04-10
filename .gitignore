@@ -1,9 +1,0 @@
-bin/
-classes/
-META-INF/
-.metadata/
-.idea/
-.settings/
-.classpath
-.project
-Leetcode.iml
