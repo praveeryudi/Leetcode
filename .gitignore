@@ -1,7 +1,9 @@
 bin/
 classes/
+RemoteSystemsTempFiles/
 META-INF/
 .metadata/
+out/
 .idea/
 .settings/
 .classpath
