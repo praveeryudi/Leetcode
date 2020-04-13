@@ -6,7 +6,7 @@ public class _234_Palindrome_Linked_List {
 		int key;
 		Node next;
 		
-		public Node(int key) {
+		Node(int key) {
 			this.key = key;
 		}
 	}
@@ -49,12 +49,12 @@ public class _234_Palindrome_Linked_List {
 
 	public static void main(String[] args) {
 
-		Node start = new Node(3);
-		start.next = new Node(2);
-		start.next.next = new Node(1);
-		start.next.next.next = new Node(1);
-		start.next.next.next.next = new Node(2);
-		start.next.next.next.next.next = new Node(3);
+		Node start = new Node(1);
+		start.next = new Node(1000000000);
+		start.next.next = new Node( -1000000000);
+		start.next.next.next = new Node(-1000000000);
+		start.next.next.next.next = new Node(1000000000);
+		start.next.next.next.next.next = new Node(1);
 		
 		System.out.println("Is Linked List Palindrome = " + isLinkedListPalindrome(start));
 	}
