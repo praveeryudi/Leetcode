@@ -23,9 +23,9 @@ public class LastStoneWeight {
         while(!pq.isEmpty()) {
             if(pq.size() == 1)
                 return pq.peek();
-            int a = pq.poll();
-            int b = pq.poll();
-            if(a != b){
+            Integer a = pq.poll();
+            Integer b = pq.poll();
+            if(!a.equals(b)){
                 pq.offer(a - b);
             }
         }
