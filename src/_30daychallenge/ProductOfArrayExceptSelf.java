@@ -20,5 +20,4 @@ public class ProductOfArrayExceptSelf {
 
         System.out.println(Arrays.toString(output));
     }
-
 }
