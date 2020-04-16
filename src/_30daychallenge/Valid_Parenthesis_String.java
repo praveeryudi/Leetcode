@@ -10,8 +10,8 @@ public class Valid_Parenthesis_String {
         if(s.startsWith(")"))
             return false;
 
-        /**
-         * Stack of Integers - to store indices of characters
+        /*
+          Stack of Integers - to store indices of characters
          */
         Stack<Integer> left = new Stack<>();
         Stack<Integer> star = new Stack<>();
