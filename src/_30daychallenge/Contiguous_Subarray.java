@@ -3,6 +3,9 @@ package _30daychallenge;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
+ */
 public class Contiguous_Subarray {
 
     public static void main(String[] args) {

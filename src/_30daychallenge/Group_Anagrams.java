@@ -2,6 +2,9 @@ package _30daychallenge;
 
 import java.util.*;
 
+/**
+ * Given an array of strings, group anagrams together.
+ */
 public class Group_Anagrams {
     public static void main(String[] args) {
         String[] input = new String[]{"eat", "tea", "tan", "ate", "nat", "bat"};

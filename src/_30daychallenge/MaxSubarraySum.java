@@ -1,5 +1,8 @@
 package _30daychallenge;
 
+/**
+ * Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+ */
 public class MaxSubarraySum {
     public static void main(String[] args) {
         int[] arr = new int[]{4, -1, 0, 2, 3, -3};

@@ -1,5 +1,8 @@
 package _30daychallenge;
 
+/**
+ * Return the root node of a binary search tree that matches the given pre-order traversal.
+ */
 public class BST_From_Preorder {
 
     private static class TreeNode {

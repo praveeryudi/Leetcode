@@ -2,6 +2,9 @@ package _30daychallenge;
 
 import java.util.Arrays;
 
+/**
+ * Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+ */
 public class MoveZeroes {
 
     public static void main(String[] args) {
@@ -20,5 +23,4 @@ public class MoveZeroes {
 
         System.out.println(Arrays.toString(arr));
     }
-
 }
