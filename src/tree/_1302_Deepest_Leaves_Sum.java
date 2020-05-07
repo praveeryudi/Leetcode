@@ -10,7 +10,7 @@ public class _1302_Deepest_Leaves_Sum {
 		TreeNode left;
 		TreeNode right;
 		
-		public TreeNode(Integer key) {
+		TreeNode(Integer key) {
 			this.key = key;
 		}
 	}
@@ -27,7 +27,7 @@ public class _1302_Deepest_Leaves_Sum {
     
     private static void helper(TreeNode root, int level) {
         if(result.size() == level) {
-            result.add(new ArrayList<Integer>());
+            result.add(new ArrayList<>());
         }
         
         result.get(level).add(root.key);
