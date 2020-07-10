@@ -3,7 +3,7 @@ package tree;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Unique_BST {
+public class _96_Unique_BST {
 
     public static void main(String[] args) {
         int res = getUniqueBSTs(5, new HashMap<>());
