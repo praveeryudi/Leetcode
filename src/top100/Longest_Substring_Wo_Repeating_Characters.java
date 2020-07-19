@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * Given a string, find the length of the longest substring without repeating characters.
  */
-public class Longest_Substring_Without_Repeating_Characters {
+public class Longest_Substring_Wo_Repeating_Characters {
 
     public static void main(String[] args) {
         String input = "abcabcbb";
