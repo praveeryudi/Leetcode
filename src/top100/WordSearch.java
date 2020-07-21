@@ -1,5 +1,9 @@
 package top100;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Given a 2D board and a word, find if the word exists in the grid.
  *
@@ -8,15 +12,19 @@ package top100;
  */
 public class WordSearch {
 
+    private static List<String> path = new ArrayList<>();
+
     public static void main(String[] args) {
         char[][] board = {
-                {'A','B','C','E'},
+                {'A','B','H','I'},
                 {'S','F','C','S'},
-                {'A','D','E','E'}
+                {'A','K','E','H'}
         };
-        String word = "ABCCED";
+        String word = "ABHISHEK";
         boolean isExist = exist(board, word);
         System.out.println("Is word exists = " + isExist);
+        Collections.reverse(path);
+        System.out.println(path);
     }
 
     private static boolean exist(char[][] board, String word) {
@@ -35,14 +43,19 @@ public class WordSearch {
         if(i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] != word.charAt(count))
             return false;
         if(count == word.length() - 1)
+        {
+            path.add(i + "," + j);
             return true;
+        }
         char temp = grid[i][j];
         grid[i][j] = '\0';
         boolean isFound = dfs(grid, i, j-1, count + 1, word) ||
                 dfs(grid, i-1, j, count + 1, word) ||
                 dfs(grid, i, j+1, count + 1, word) ||
                 dfs(grid, i+1, j, count + 1, word);
-        if(!isFound)
+        if(isFound)
+            path.add(i + "," + j);
+        else
             grid[i][j] = temp;
         return isFound;
     }
