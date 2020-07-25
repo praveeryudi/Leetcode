@@ -1,5 +1,8 @@
 package top100;
 
+/**
+ * Reverse a singly linked list.
+ */
 public class ReverseList {
     private static class Node {
         int key;
