@@ -1,6 +1,6 @@
 package tree;
 
-public class Cousins_In_BT {
+public class _993_Cousins_In_BT {
 
     private static class TreeNode {
         int val;

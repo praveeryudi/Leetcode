@@ -6,7 +6,7 @@ public class _234_Palindrome_Linked_List {
 		int key;
 		Node next;
 		
-		public Node(int key) {
+		Node(int key) {
 			this.key = key;
 		}
 	}
@@ -32,12 +32,12 @@ public class _234_Palindrome_Linked_List {
 	
 	/**
 	 * Generic code to reverse a SLL.
-	 * @param head
-	 * @return Node
+	 * @param head - head of the list
+	 * @return ListNode
 	 */
 	private static Node reverse(Node head) {
 		Node curr = head;
-		Node prev = null, next = null;
+		Node prev = null, next;
 		while(null != curr) {
 			next = curr.next;
 			curr.next = prev;
