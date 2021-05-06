@@ -27,7 +27,7 @@ public class _994_RottingOranges {
         int cols = grid[0].length;
         int fresh = 0;
 
-        // Count all fresh oranges; if rotten - add to queue
+        // Count all fresh oranges; if rotten - accept to queue
         for(int i = 0; i < rows; i++) {
             for(int j = 0; j < cols; j++) {
                 if(grid[i][j] == 1 )
