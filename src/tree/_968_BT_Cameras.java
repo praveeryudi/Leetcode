@@ -52,7 +52,7 @@ public class _968_BT_Cameras {
         if(left.hasCamera || right.hasCamera) {
             isMonitored = true;
         }
-        // If neither child has camera or only one child has camera
+        // If neither child is monitored or only one child is monitored
         if(!left.isMonitored || !right.isMonitored) {
             hasCamera = true;
             isMonitored = true;
