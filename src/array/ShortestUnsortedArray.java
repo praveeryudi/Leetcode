@@ -1,4 +1,4 @@
-package _30daychallenge;
+package array;
 
 public class ShortestUnsortedArray {
 
