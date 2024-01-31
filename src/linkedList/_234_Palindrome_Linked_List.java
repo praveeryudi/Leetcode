@@ -2,7 +2,7 @@ package linkedList;
 
 public class _234_Palindrome_Linked_List {
 	
-	private static class Node{
+	public static class Node{
 		int key;
 		Node next;
 		

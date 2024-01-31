@@ -20,13 +20,14 @@ public class _152_MaxProductSubarray {
 		int res = 0;
 		
 		for(int index = 1; index < A.size(); index++) {
+			int current = A.get(index);
 			if(A.get(index) > 0) {
-				max[index] = Math.max(A.get(index), max[index-1] * A.get(index));
-				min[index] = Math.min(A.get(index), min[index-1] * A.get(index));
+				max[index] = Math.max(current, max[index-1] * current);
+				min[index] = Math.min(current, min[index-1] * current);
 			}
 			else {
-				max[index] = Math.max(A.get(index), min[index-1] * A.get(index));
-				min[index] = Math.min(A.get(index), max[index-1] * A.get(index));
+				max[index] = Math.max(current, min[index-1] * current);
+				min[index] = Math.min(current, max[index-1] * current);
 			}
 			res = Math.max(res, max[index]);
 		}
