@@ -6,8 +6,8 @@ public class CountingSemaphores {
 
     private static class SharedPrinter{
 
-        private Semaphore semOdd = new Semaphore(1);
-        private Semaphore semEven = new Semaphore(0);
+        private final Semaphore semOdd = new Semaphore(1);
+        private final Semaphore semEven = new Semaphore(0);
 
         //Method for printing even numbers
         public void printEvenNum(int num){

@@ -7,7 +7,7 @@ public class _5_Longest_Palindromic_Substring {
 
     public static void main(String[] args) {
 
-        String input = "abcdcba";
+        String input = "abcd";
 
         int len = input.length();
         for(int start = 0; start < len - 1; start++) {
